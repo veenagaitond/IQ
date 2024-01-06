@@ -1,0 +1,220 @@
+1.	Entrypoint in Docker?
+•	The ENTRYPOINT instruction in a Dockerfile specifies the command to run when the container starts.
+2.	CMD vs Entrypoint?
+•	CMD is used to provide default arguments for the entrypoint, while ENTRYPOINT sets the main command to be executed.
+3.	ADD and Copy?
+•	Both ADD and COPY are used to copy files from the local file system into the Docker image, but COPY is preferred for simple copying.
+4.	If you press CTRL+C during docker build –t cmd execution, what happens?
+•	The build process will be interrupted, and the container being built will not be created.
+5.	Dockerfile size is 2GB and needs to be reduced. What will you do?
+•	Use multi-stage builds, remove unnecessary files, and minimize layer sizes to reduce the overall image size.
+6.	Difference between layers and image?
+•	Layers are the intermediate steps in the Docker image creation process. The image is the final result that consists of layers.
+7.	If you give multiple entrypoints in a Dockerfile, which will be executed, and what happens to previous ones?
+•	Only the last ENTRYPOINT will be executed. Previous ones will be overridden.
+8.	By default, in which user does the container start to execute commands?
+•	Containers typically start with the root user by default.
+9.	Docker socket?
+•	The Docker socket (/var/run/docker.sock) is a Unix socket that Docker daemon listens to for Docker API requests.
+10.	What is container runtime in Docker?
+•	The container runtime is the software responsible for running containers. Docker uses containerd as its default container runtime.
+11.	How do you mount a file system in a Docker container?
+•	Use the -v or --mount option with docker run to mount a volume into a container.
+12.	Write a Dockerfile and push it to Docker Hub.
+•	Writing a complete Dockerfile here would be extensive, but the process involves creating a Dockerfile, building an image, tagging it, and pushing to Docker Hub.
+13.	Dockerfile structure?
+•	Dockerfile includes instructions like FROM, RUN, COPY, ADD, CMD, ENTRYPOINT, etc., each serving a specific purpose.
+14.	Multistage Dockerfile script?
+•	A multistage Dockerfile is used to create smaller images by using multiple build stages. It involves using multiple FROM instructions.
+15.	Dockerfile to install Java?
+•	Example:
+DockerfileCopy code
+FROM openjdk:11 WORKDIR /app COPY . /app CMD ["java", "-jar", "your-java-app.jar"] 
+16.	From command?
+•	The FROM command in a Dockerfile sets the base image for subsequent instructions.
+17.	Publish & Expose?
+•	PUBLISH is not a valid Docker command. To expose ports, use the EXPOSE instruction in the Dockerfile.
+18.	Command to publish & expose?
+•	Example:
+DockerfileCopy code
+EXPOSE 80 
+19.	Docker container?
+•	A Docker container is a lightweight, standalone, and executable package that includes everything needed to run a piece of software.
+20.	Difference between CMD & Entrypoint?
+•	Already answered in #2.
+21.	Difference between CMD and RUN?
+•	RUN is used to execute commands during the image build, while CMD sets the default command to run when the container starts.
+22.	If a container has stopped and terminated, how will you collect logs when you don't have a volume attached to it?
+•	You can use docker logs <container_id> to retrieve logs. Without a volume, logs are lost when the container is removed.
+23.	Security measures you took to secure the Docker image?
+•	Regular updates, minimal image layers, use of official base images, image scanning for vulnerabilities, and minimizing unnecessary software.
+24.	Which scanning mechanism do you use to scan images regularly?
+•	Tools like Clair, Anchore, and Docker Security Scanning can be used for regular image scanning.
+25.	Do you use Docker Swarm?
+•	Docker Swarm is a container orchestration tool. Whether to use it depends on specific project requirements.
+26.	Dockerfile?
+•	Already answered in previous questions.
+27.	Entrypoint, CMD?
+•	Already answered in previous questions.
+28.	How do you create a Docker image from a Dockerfile?
+•	Use the docker build -t <image_name>:<tag> <path_to_Dockerfile> command.
+29.	Difference between Docker image and container?
+•	An image is a lightweight, stand-alone, and executable package, while a container is a running instance of an image.
+30.	Namespace, cgroup?
+•	Docker uses namespaces for isolation and control groups (cgroups) for resource management.
+31.	If you've created a custom container, how can you deliver it to other users?
+•	Push the image to a registry (like Docker Hub) or share the image file with other users.
+32.	Where do you store Docker images in a project?
+•	In a registry such as Docker Hub or a private registry.
+33.	What is DTR (Docker Trust Registry)?
+•	Docker Trusted Registry is an enterprise-grade image storage solution with role-based access control.
+34.	Write the Docker file with all the commands and explain?
+•	Providing a complete Dockerfile and explanation would be extensive. It depends on the use case.
+35.	Dockerfile versioning?
+•	Dockerfile versioning specifies the syntax version and is declared at the top of the Dockerfile (# syntax=docker/dockerfile:1.0).
+36.	Docker file structure?
+•	Already answered in previous questions.
+37.	Multistage Dockerfile script?
+•	Already answered in previous questions.
+38.	Dockerfile to install Java?
+•	Already answered in previous questions.
+39.	From command?
+•	Already answered in previous questions.
+40.	Publish & Expose?
+•	Already answered in previous questions.
+41.	Command to publish & expose?
+•	Already answered in previous questions.
+42.	Docker container?
+•	Already answered in previous questions.
+43.	Docker multiple stage build?
+•	Already answered in previous questions.
+44.	Docker CMD for a troubled container?
+•	docker exec -it <container_id> /bin/bash can be used to troubleshoot a container interactively.
+45.	Docker Swarm?
+•	Already answered in previous questions.
+46.	Docker Compose?
+•	Docker Compose is a tool for defining and running multi-container Docker applications.
+47.	How do you maintain Docker and Kubernetes in your production?
+•	Maintenance involves regular updates, monitoring, and addressing security vulnerabilities.
+48.	Difference between Docker and K8s?
+•	Docker is a containerization platform, while Kubernetes (K8s) is a container orchestration platform.
+49.	Best practices for writing Dockerfile?
+•	Use official base images, minimize layers, install only necessary software, and follow the principle of least privilege.
+50.	How will you scan your Docker images for security vulnerabilities?
+•	Use tools like Clair, Anchore, or Docker Security Scanning for regular image scanning.
+51.	Docker layers; the top layer is read & write?
+•	Docker layers are immutable, and changes are added as new layers. The top layer is the read/write layer, and modifications are stored there.
+52.	Have you used any kind of Docker concept?
+•	Already answered in previous questions.
+53.	Where do you fit Docker concepts? Which network do you use?
+•	The choice of network depends on the project requirements. Docker provides bridge, host, overlay, and macvlan networks.
+54.	Difference between CMD & ENTRYPOINT?
+•	Already answered in previous questions.
+55.	COPY & ADD?
+•	Both COPY and ADD are used to copy files into a Docker image, but COPY is recommended for most use cases.
+56.	Common issues you faced when creating a Docker image?
+•	Common issues include dependency management, image size optimization, and ensuring proper cleanup in the Dockerfile.
+57.	Created a container using docker -p, and it crashed. How do you troubleshoot?
+•	Use docker logs <container_id> to check the container logs for error messages and troubleshoot accordingly.
+58.	Container with a Java-based application is not restarting. What could be the issues?
+•	Check logs using docker logs <container_id>, inspect container status with docker inspect, and review the application configuration.
+59.	Using a plain vanilla Docker machine, and the container is not up.
+•	Check Docker machine status (docker-machine ls), logs, and inspect the container for any error messages.
+60.	Client wants a custom container registry. How do you containerize a custom registry?
+•	You can use a tool like Docker Distribution to set up your private container registry.
+61.	Copy files/Docker image from one machine to another without using a registry?
+•	Use docker save on the source machine, transfer the image file, and then use docker load on the target machine.
+62.	VM vs Docker?
+•	VMs provide full isolation with a hypervisor, while Docker containers share the host OS kernel, offering lightweight isolation.
+63.	Why can't we use AWS AMI instead of Docker Image?
+•	AWS AMIs are more heavyweight than Docker images, as they contain a full operating system, whereas Docker images share the host OS kernel.
+64.	Dockerfile directives and scenarios based on entry point?
+•	This would depend on the specific scenarios and use cases. Dockerfile directives include FROM, RUN, COPY, CMD, ENTRYPOINT, etc.
+65.	Docker file size is 2GB and needs to be reduced. What will you do?
+•	Already answered in previous questions.
+66.	Difference between layers and image?
+•	Already answered in previous questions.
+67.	If you give multiple entrypoints in a Dockerfile, which will be executed, and what happened to previous ones?
+•	Already answered in previous questions.
+68.	By default, in which user does the container start to execute commands?
+•	Already answered in previous questions.
+69.	Dockerfile structure?
+•	Already answered in previous questions.
+70.	Docker networks?
+•	Docker provides bridge, host, overlay, and macvlan networks for container communication.
+71.	Command to attach a Docker volume to a container?
+•	docker run -v <host_path>:<container_path>.
+72.	Create a basic container command?
+•	docker run -d --name my_container my_image.
+73.	What's the use of docker ps?
+•	docker ps lists the currently running containers along with their details.
+74.	Difference between K8s & Docker Swarm?
+•	Already answered in previous questions.
+75.	What are the services in Docker Swarm?
+•	Services in Docker Swarm define the desired state for a service and can be scaled horizontally.
+76.	With Docker, what kind of application have you used, Java-based or Python-based?
+•	The choice of the application depends on the project. Docker supports applications written in various programming languages.
+77.	What's a Dockerfile?
+•	Already answered in previous questions.
+78.	CMD vs Entrypoint?
+•	Already answered in previous questions.
+79.	What is Docker port mapping?
+•	Port mapping allows mapping ports from the host machine to the container, enabling external access to services running inside the container.
+80.	What's -p in Docker?
+•	-p is used to map ports between the host and the container. For example, -p 8080:80 maps port 80 in the container to port 8080 on the host.
+81.	Dockerfile?
+•	Already answered in previous questions.
+82.	Docker many questions on network, Docker commands, Docker troubleshooting, multistage build?
+•	Docker networking involves various concepts like bridge networks, host networks, overlay networks, etc. Docker commands cover basic operations like run, build, ps, etc.
+83.	Stateful and stateless containers?
+•	Stateless containers don't store persistent data, while stateful containers maintain data between restarts.
+84.	Difference between them?
+•	Already answered in previous questions.
+85.	Tell use case?
+•	A stateful container might be used for a database, while a stateless container could be a web server.
+86.	In Dockerfile run the application. Which command do you use - entrypoint, CMD?
+•	It depends on the use case. ENTRYPOINT sets the main command, and CMD provides default arguments.
+87.	What is containerization?
+•	Containerization is the process of encapsulating an application and its dependencies into a container for consistent deployment and execution.
+88.	How do you give root permission inside a Dockerfile?
+•	Use the USER instruction in the Dockerfile to switch to a non-root user.
+89.	Dockerfile - explain each command you have written?
+•	Each Dockerfile command has a specific purpose, like setting the base image (FROM), installing dependencies (RUN), copying files (COPY), etc.
+90.	Docker commands?
+•	Docker commands include docker run, docker build, docker ps, docker exec, etc.
+91.	How will you make your application in Docker access externally?
+•	Use port mapping (-p) in the docker run command to map container ports to host ports.
+92.	Write multistage Dockerfile?
+•	Already answered in previous questions.
+94.	Diff between CMD and entrypoint:
+•	CMD sets the default command and/or parameters for an executable, while ENTRYPOINT configures the container to run as an executable.
+95.	How to find background processes in Docker containers:
+•	Use docker top <container_id> to view the processes running in a container.
+96.	What is Docker Swarm & Compose:
+•	Docker Swarm is a native clustering and orchestration solution for Docker. Docker Compose is a tool for defining and running multi-container Docker applications.
+97.	Which applications are running in your Docker containers:
+•	To see running containers and their applications, use the docker ps command.
+98.	What is entrypoint and command in Docker:
+•	ENTRYPOINT specifies the default executable for a container, while CMD provides default arguments for the executable defined by ENTRYPOINT.
+99.	Write Dockerfile:
+# Use an official Python runtime as a parent image
+FROM python:3.8-slim
+
+# Set the working directory to /app
+WORKDIR /app
+
+# Copy the current directory contents into the container at /app
+COPY . /app
+
+# Install any needed packages specified in requirements.txt
+RUN pip install --trusted-host pypi.python.org -r requirements.txt
+
+# Make port 80 available to the world outside this container
+EXPOSE 80
+
+# Define environment variable
+ENV NAME World
+
+# Run app.py when the container launches
+CMD ["python", "app.py"]
+
