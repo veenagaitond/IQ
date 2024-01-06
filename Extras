@@ -1,0 +1,302 @@
+1.	Diff between - (hyphen) and _ (underscore) in coding:
+•	In many programming languages, hyphen and underscore are used interchangeably in variable and function naming. However, hyphens are more commonly used in URLs and certain naming conventions.
+2.	What sort of web application server have you worked:
+•	Answers may vary based on personal experience. Common examples include Apache, Nginx, Tomcat, and others.
+3.	How will you configure a load balancer in Apache? In which config file do you need to change?
+•	Load balancing in Apache can be configured using the mod_proxy module. Changes are made in the Apache configuration file, usually httpd.conf or a separate file included in the main configuration.
+4.	Difference between DevOps and Agile methodology:
+•	Agile is a software development methodology emphasizing iterative development. DevOps is a set of practices that aim to automate and integrate the processes between software development and IT operations.
+5.	How will you store an artifact:
+•	Artifacts are commonly stored in artifact repositories like JFrog Artifactory, Nexus, or even cloud-based solutions like AWS S3 or Azure Artifacts.
+6.	Which cloud model do Developers and organizations all around the world leverage?
+•	Common cloud models include Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS).
+7.	When you deploy an application, how do you monitor the cluster:
+•	Monitoring tools like Prometheus, Grafana, ELK Stack, or commercial solutions are commonly used to monitor the health and performance of a cluster.
+8.	If you are using Prometheus, where do you see all the logs:
+•	Prometheus is mainly for metrics monitoring, not logs. Logs are typically managed by other tools like ELK Stack or centralized logging systems.
+9.	Prometheus scrape data:
+•	Prometheus uses HTTP to scrape (collect) metrics from instrumented jobs. Jobs expose a /metrics endpoint, and Prometheus scrapes this endpoint.
+10.	What kind of monitoring experience do you have:
+•	Answer based on your experience with monitoring tools such as Prometheus, Grafana, Nagios, or others.
+11.	A customer is asking you to monitor RAM of a particular instance. How are you going to do that:
+•	Use monitoring tools like Prometheus or CloudWatch to set up alerts and dashboards for monitoring RAM usage on the instance.
+12.	Ticket numbers you get during production:
+•	This question seems specific to the organization's ticketing system, and the answer would depend on the system in use.
+13.	How will you set up the virtual environment:
+•	Use tools like virtualenv (for Python), venv, or conda to set up isolated virtual environments for different projects.
+14.	Are you aware of Helm charts:
+•	Helm charts are packages of pre-configured Kubernetes resources. Answer based on your experience with Helm charts.
+15.	Have you deployed anything using Helm charts:
+•	Answer based on your experience with using Helm charts for Kubernetes deployments.
+16.	Artifactory:
+•	Artifactory is a repository manager used for storing and managing binary artifacts. It supports various package formats and integrates with CI/CD pipelines.
+17.	Security practices in your project:
+•	Mention security practices such as code reviews, automated testing, vulnerability scanning, and regular security audits.
+18.	Security practices in your project:
+•	Repeat of a previous question. See answer #27.
+19.	Give the output of the following code:
+pythonCopy code
+# File name is script.py # python3 script.py example import sys print(sys.argv[0]) print(len(sys.argv)) print(str(sys.argv)) 
+•	The code prints the script name, the number of arguments, and the list of arguments.
+20.	(No specific question):
+•	If you have a specific question related to number 38, please provide more details.
+21.	How are you differentiating multiple images:
+•	Image differentiation can be based on version tags, commit hashes, or other versioning strategies.
+22.	Do you know Python scripting:
+•	Answer based on your proficiency with Python scripting.
+23.	How were you doing the releases:
+•	Explain the release process in terms of versioning, branching, testing, and deployment.
+24.	Suppose 4-5 members from other teams come to you for some tasks. Who will you give priority first to solve:
+•	Prioritize tasks based on urgency, impact, and project priorities.
+25.	Share experience with debugging in production:
+•	Explain how you handle debugging in production, including tools, best practices, and any specific incidents.
+26.	Have you done any operational support in the current company:
+•	Answer based on your experience with operational support tasks.
+27.	Have you managed any database server (Administration part):
+•	Answer based on your experience with database administration tasks.
+28.	Have you had any deadlock issue in Linux:
+•	Answer based on your experience with handling deadlock issues or similar situations in Linux.
+29.	Have you deployed any application in your current company:
+•	Answer based on your experience with deploying applications in your current company.
+30.	What are the activities done in Kubernetes recently in your company:
+•	Explain recent Kubernetes-related tasks or projects in your organization.
+31.	How are you maintaining your application in a pod if load is huge:
+•	Discuss strategies for scaling applications in Kubernetes pods, such as horizontal pod autoscaling.
+32.	Nagios: Monitors K8s cluster:
+•	Nagios is a monitoring tool. Explain how it's used to monitor a Kubernetes cluster.
+33.	Want to change the URL of a local repo from https to ssh:
+•	Update the remote URL using the git remote set-url command.
+34.	When you are provisioning different environments, how do you orchestrate that with the current configuration:
+•	Discuss the use of infrastructure as code tools like Terraform or Ansible for orchestrating environment provisioning.
+35.	Prometheus scrape data:
+•	Repeat of a previous question. See answer #16.
+36.	Helm file structure:
+•	Helm charts have a specific structure, including directories for charts, templates, and values.
+37.	When you deploy an application, how do you monitor the cluster:
+•	Repeat of a previous question. See answer #14.
+38.	If you are using Prometheus, where do you see all the logs:
+•	Repeat of a previous question. See answer #15.
+39.	Which cloud model do Developers and organizations all around the world leverage:
+•	Repeat of a previous question. See answer #13.
+40.	What all testing does your release go through, and which are manual and automatic:
+•	Explain the testing phases, including unit testing, integration testing, and any manual or automated testing.
+41.	What kind of approvals do you take in the release process:
+•	Describe the approval workflow for releasing changes, including code reviews, testing approvals, and any required sign-offs.
+42.	Which tool are you using to deploy or to maintain deployment strategy:
+•	Mention the deployment tool or orchestration platform used in your organization, such as Kubernetes, Docker Swarm, or others.
+43.	What is the recent actual implementation that you did/recent automation or what kind of problem that you have solved:
+•	Discuss a recent task or project you worked on, highlighting the problem solved or automation implemented.
+44.	Recent task that you were involved in:
+•	Repeat of a previous question. See answer #72.
+45.	Were you involved in the production release of your application? Are you deploying any application:
+•	Repeat of a previous question. See answer #72.
+46.	How are you promoting your application from one environment to another environment (QA to staging):
+•	Explain the process of promoting applications across different environments, including any scripts or tools used.
+47.	Why do we have to use Terraform? Why is it hyped in the market? Based on your experience, give some instances:
+•	Discuss the benefits of Terraform, such as infrastructure as code, multi-cloud support, and version control.
+48.	What kind of shell script have you written:
+•	Discuss the types of shell scripts you have written, including automation tasks, deployment scripts, or other use cases.
+49.	Are you ready to work on Azure & ArgoCD:
+•	Answer based on your willingness and experience with working on Azure and ArgoCD.
+50.	Have you worked on any cloud migration:
+•	Discuss any experience with migrating applications or infrastructure to the cloud.
+51.	Have you worked on Python:
+•	Repeat of a previous question. See answer #44.
+52.	What type of JIRA tickets do you regularly get, and how many do you resolve in a sprint:
+•	Discuss the types of JIRA tickets you commonly handle and your sprint performance.
+53.	What is the recent actual implementation that you did/recent automation or what kind of problem that you have solved:
+•	Repeat of a previous question. See answer #72.
+54.	Tell me about yourself:
+•	Provide a brief overview of your professional background, skills, and relevant experience.
+55.	What is the difference between Helm V2 and V3:
+•	Discuss the major differences between Helm versions, such as the removal of Tiller in Helm V3.
+56.	Why have they removed Tiller:
+•	Explain the reasons behind removing Tiller in Helm V3, including security and architecture improvements.
+57.	Deployment strategy:
+•	Discuss your approach to deploying applications, including strategies like blue-green deployments or canary releases.
+58.	Nagios:
+•	Repeat of a previous question. See answer #61.
+59.	What were you monitoring with Nagios:
+•	Repeat of a previous question. See answer #61.
+60.	What are the things that will happen when I hit www.google.com:
+•	Discuss the typical processes involved when accessing a website, including DNS resolution, HTTP requests, and content delivery.
+61.	How were you deploying applications to different environments:
+•	Repeat of a previous question. See answer #77.
+62.	What tools were you using to monitor K8s:
+•	Repeat of a previous question. See answer #14.
+63.	Explain the infrastructure in your company:
+•	Provide an overview of the infrastructure architecture in your organization, including cloud providers, networking, and services.
+64.	How was your CI/CD process:
+•	Discuss the CI/CD pipeline used in your organization, including tools, stages, and any challenges.
+65.	How to make an app HA:
+•	Achieve high availability by using load balancers, redundant servers, and scalable architecture.
+66.	If you want to autoscale manually, what is the command:
+•	It depends on the platform. In Kubernetes, you might use kubectl scale or update the deployment with the desired replica count.
+67.	Suppose you are asked to deploy an API gateway that should be on the external side:
+•	Explain the steps involved in deploying an API gateway externally, including networking and security considerations.
+68.	Have you worked on cost estimation in your project:
+•	Discuss any experience with estimating and managing project costs, especially in cloud environments.
+69.	For AWS, what are the services you used for day-to-day projects:
+•	Discuss the AWS services you commonly use in your day-to-day projects, such as EC2, S3, RDS, etc.
+70.	Do you have experience in EKS, ECS:
+•	Discuss any experience with Amazon EKS (Elastic Kubernetes Service) or ECS (Elastic Container Service).
+71.	What tools are you used on infrastructure:
+•	Mention infrastructure tools you commonly use, such as Terraform, Ansible, or cloud-specific tools.
+72.	Briefly overview your infra, k8s, Docker, how you provision it, what are the components, services, how many master nodes & worker nodes, and creating an EC2 instance. Through Terraform, how do you use it:
+•	Provide an overview of your infrastructure, Kubernetes setup, Docker usage, and how Terraform is utilized in provisioning.
+73.	A ticket has come to install 2 master nodes, 3 worker nodes, along with that, the need to maintain end-to-end cluster IP. This needs to be created using Terraform:
+•	Discuss the Terraform configuration and steps to install and configure Kubernetes master and worker nodes.
+74.	How many microservices and how many AWS accounts are you using:
+•	Discuss the number of microservices in your architecture and how many AWS accounts you manage.
+75.	One application is running locally; I need to access it globally. What needs to be configured, and how would you validate:
+•	Discuss the steps involved in exposing a locally running application globally, including networking configurations and validation.
+76.	Ingress controller, which one are you using:
+•	Mention the Ingress controller you use in your Kubernetes setup, such as Nginx Ingress or Traefik.
+77.	(No specific question):
+•	If you have a specific question related to number 130, please provide more details.
+78.	Detailed CI/CD using all tools, taking your project as an example:
+•	Discuss the detailed CI/CD pipeline in your project, including the tools used, stages, and any specific configurations.
+79.	Which testing tools have you integrated:
+•	Discuss the testing tools integrated into your CI/CD pipeline, including unit testing, integration testing, etc.
+80.	What's the team size (DevOps):
+•	Provide the size of your DevOps team, including roles and responsibilities.
+81.	How many developers:
+•	Provide the number of developers in your team or organization.
+82.	Node.js any tool used for coverage:
+•	Discuss any tools used for code coverage in Node.js projects, such as Istanbul.
+83.	Do you know Java Spring Boot:
+•	Discuss your familiarity with
+83.	Have you worked on Python?
+•	Yes, I have experience with Python scripting.
+84.	What type of JIRA tickets do you regularly handle, and how many do you resolve in a sprint?
+•	I handle various JIRA tickets related to infrastructure, deployment, and automation. The number resolved in a sprint depends on the complexity and priority of the tasks.
+85.	What is the recent implementation or automation you've worked on, or what kind of problem have you solved?
+•	Provide details of a recent project, automation task, or problem-solving experience.
+87.	Tell me about yourself. Helm Version.
+•	Introduce yourself briefly, and regarding Helm, specify which version you are currently using or have experience with.
+88.	What is the difference between Helm V2 and V3?
+•	Helm V3 introduces improvements, including the removal of Tiller, enhanced security, and changes to the chart structure.
+89.	Why have they removed Tiller?
+•	Tiller was removed in Helm V3 for security reasons, as it had potential vulnerabilities.
+90.	Deployment strategy.
+•	Describe the deployment strategy you follow, such as rolling updates, blue-green deployments, or canary releases.
+91.	Nagios? What were you monitoring with Nagios?
+•	Explain your experience with Nagios and specify what systems or services you were monitoring.
+92.	What happens when you hit www.google.com?
+•	Discuss the typical DNS resolution, HTTP request, and response flow when accessing a website.
+93.	How were you deploying applications to different environments?
+•	Describe your deployment process, whether manual or automated, and mention tools used.
+94.	What tools were you using to monitor Kubernetes?
+•	Provide details on the monitoring tools and strategies employed for Kubernetes.
+97.	Explain the infrastructure in your company.
+•	Describe the key components, technologies, and architecture of the infrastructure in your organization.
+100.	How was your CI/CD process?
+•	Outline the Continuous Integration and Continuous Deployment processes in your projects.
+102.	How to make an app highly available? If you want to autoscale manually, what is the command?
+•	Discuss strategies for achieving high availability and mention relevant commands for manual autoscaling.
+117.	Suppose you are asked to deploy an API gateway externally.
+•	Explain the steps and considerations for deploying an API gateway externally.
+118.	Have you worked on cost estimation in your project?
+•	Discuss any experience or tools used for estimating costs in your projects.
+122.	For AWS, what services have you used in your day-to-day project?
+•	List the AWS services you frequently use in your day-to-day tasks.
+123.	Do you have experience with EKS and ECS?
+•	Describe your experience with Amazon EKS (Elastic Kubernetes Service) and ECS (Elastic Container Service).
+124.	What tools have you used for infrastructure?
+•	Provide details about the infrastructure tools you use, such as Terraform or CloudFormation.
+125.	Briefly overview your infrastructure, K8s, Docker provisioning.
+•	Provide an overview of how you provision and manage infrastructure, Kubernetes, and Docker, including the number of master and worker nodes.
+126.	A ticket has come to install 2 master nodes, 3 worker nodes, and maintain end-to-end cluster IP using Terraform.
+•	Describe the steps you would take to fulfill this ticket using Terraform.
+127.	How many microservices and AWS accounts are you using?
+•	Specify the number of microservices and AWS accounts in your environment.
+128.	An application is running locally; you need to access it globally. How do you configure it temporarily, and how do you validate?
+•	Discuss the steps and configurations to make a locally running application accessible globally.
+129.	Which ingress controller are you using?
+•	Mention the specific ingress controller used in your Kubernetes environment.
+137.	Detailed CI/CD using all tools in your project as an example.
+•	Provide a detailed overview of your CI/CD pipeline, including the tools and stages involved.
+138.	Which testing tools have you integrated?
+•	List the testing tools integrated into your CI/CD pipeline.
+139.	What is the team size in DevOps?
+•	Specify the size of your DevOps team.
+140.	How many developers are in your team?
+•	Mention the number of developers collaborating in your team.
+141.	Node.js: Any tool used for coverage?
+•	Discuss whether you use any code coverage tools for Node.js.
+142.	Do you know Java Spring Boot?
+•	Confirm your familiarity with Java Spring Boot.
+144.	Which methodology are you using (Agile)?
+•	Confirm your use of the Agile methodology.
+145.	How do you manage Scrum meetings and sprints?
+•	Explain how you conduct Scrum meetings and manage sprints.
+146.	How do you receive tickets or requirements?
+•	Describe how you typically receive and handle tickets or requirements.
+147.	How do you handle backlogs?
+•	Explain your approach to managing backlogs in your projects.
+148.	Sprint: How many use cases do you develop?
+•	Provide insights into the number of use cases developed in each sprint.
+149.	When all pipeline jobs are set up, what are your daily tasks?
+•	Explain the routine tasks you perform once all CI/CD pipeline jobs are set up.
+150.	What was your last requirement or task?
+•	Discuss the specifics of the most recent requirement or task you worked on.
+151.	Why do we use 'destroy,' and when do such cases arise?
+•	Explain the purpose of using 'destroy' and when it is typically employed.
+152.	Which monitoring tool are you using?
+•	Specify the monitoring tool you use in your projects.
+153.	What scripts have you worked on, and can you explain the logic?
+•	Discuss the scripts you have worked on and explain their logic.
+154.	Mainly looked for logic-building skills?
+•	Confirm whether logic-building skills are a key aspect of your work.
+156.	DevSecOps - SAST and DAST.
+•	Discuss your experience with Static Application Security Testing (SAST) and Dynamic Application Security Testing (DAST) in DevSecOps.
+157.	Deployment patterns.
+•	Explain the deployment patterns you follow in your projects.
+158.	Scenario-based questions on a 3-tier app.
+•	Respond to scenario-based questions related to a 3-tier application.
+159.	Status checks for an EC2 instance (2/2 checks passed): What does that mean?
+•	Explain the meaning of status checks for an EC2 instance.
+160.	Scenario on handling an issue to run a script - post-build action can be handled.
+•	Provide your approach to handling a scenario involving post-build actions.
+161.	CICD process set up in the project.
+•	Explain the setup and configuration of the CI/CD process in your project.
+165.	Suggestions for improving or automating in the project.
+•	Offer suggestions for improving or automating processes in your project.
+166.	Team count.
+•	Specify the count of team members in your DevOps team.
+168.	Explain your prod env: Running on ON prem? Server capacity?
+•	Describe the production environment, including whether it runs on-premises and details about server capacity.
+169.	Monitoring tools used.
+•	List the monitoring tools you use in your production environment.
+170.	How many servers do you use in the prod env?
+•	Specify the number of servers utilized in the production environment.
+171.	How are deployments done in prod?
+•	Describe the deployment process followed in the production environment.
+175.	Which CI tool are you using?
+•	Specify the Continuous Integration tool used in your projects.
+176.	Canary deployment strategy: How will you differentiate traffic and configure?
+•	Explain the approach to differentiate traffic and configure a canary deployment strategy.
+178.	What is an API?
+•	Provide a definition and explanation of an API (Application Programming Interface).
+179.	Structure of Helm.
+•	Describe the structure and components of Helm charts.
+180.	Explain Agile and Waterfall models.
+•	Provide explanations for the Agile and Waterfall software development models.
+181.	Have you worked on cloud migration?
+•	Discuss your experience with cloud migration projects.
+183.	Explain your Jenkins setup: How many slaves are you maintaining?
+•	Describe the setup of your Jenkins environment, including the number of slave nodes.
+184.	Have you worked on Ansible?
+•	Confirm your experience with Ansible for automation.
+185.	How do you reduce the time taken to build and troubleshoot builds?
+•	Share strategies for optimizing build times and troubleshooting build issues.
+186.	Difference between Jenkins and Hudson.
+•	Highlight the differences between Jenkins and Hudson CI/CD tools.
+187.	Roles and responsibilities: Explain the framework in your company.
+•	Provide an overview of your roles and responsibilities within the DevOps framework in your company.
+188.	What is Ambassador and Adaptor?
+•	Explain the roles of Ambassador and Adaptor in your context.
+190.	Do you know what immutable infrastructure is?
+•	Explain the concept of immutable infrastructure and its significance.
+Feel free to elaborate or ask for more detailed explanations on any specific question.
+
